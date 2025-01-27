@@ -1,0 +1,43 @@
+#interitence = Inheritance allows us to define a class that inherits all the methods and properties from another class.
+
+
+
+class Animal:
+    def __init__(self,name):
+        self.name = name
+        self.is_Alive = True
+
+    def eat(self):
+        print(f"{self.name} is eating")
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+    def run(self):
+        print(f"{self.name} is running")
+
+class Dog (Animal):
+    def bark(self):
+        print("GHou")
+
+class Cat (Animal):
+    def bark(self):
+        print("meow")
+class Mouse (Animal):
+    def bark(self):
+        print("Chiu")
+
+class Cow (Animal):
+    def bark(self):
+        print("Hamba")
+
+
+dog = Dog("Mike")
+cat = Cat ("Tintin")
+mouse = Mouse("Scooby")
+cow = Cow ("Lambda")
+
+print (cow.name)
+print(cow.is_Alive)
+cow.eat()
+cow.sleep()
+cow.run()
+cow.bark()
